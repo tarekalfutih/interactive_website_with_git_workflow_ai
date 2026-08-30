@@ -10,7 +10,7 @@ margin: 0 auto;
 }
 
 .contact p{
-    color: #999;
+    color: var(--muted-text-color);
     line-height: 25px;
     max-width: 90%;
     margin: 0 auto;
@@ -21,7 +21,7 @@ form {
     max-width: 600px;
     width: 90%;
     margin: 0 auto;
-    color: #999;
+    color: var(--muted-text-color);
 }
 
 .input-valid {
@@ -49,6 +49,8 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  background-color: var(--surface-color);
+  color: var(--text-color);
 }
 
 select.input-valid {
@@ -70,29 +72,69 @@ select.input-valid {
   color: #198754; /* green when >= 20 */
 }
 
-button{
-    color: white;
-    background-color: rgb(238, 50, 200);
-    border-radius: 5px;
-    padding: 10px;
-}
+.submitButton,
 .clearButton{
-    color: black;
+    min-width: 72px;
+    min-height: 40px;
+    border-radius: 999px;
+    padding: 0 24px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.submitButton {
+    color: white;
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+.clearButton {
+    color: var(--accent-color);
     background-color: transparent;
+    border: 1px solid var(--muted-text-color);
+}
+
+.submitButton:hover {
+    box-shadow: 0 2px 6px var(--shadow-color);
+    transform: translateY(-1px);
+}
+
+.clearButton:hover {
+    background-color: rgba(238, 50, 200, 0.08);
+    border-color: var(--accent-color);
+}
+
+.submitButton:focus-visible,
+.clearButton:focus-visible {
+    outline: 3px solid rgba(238, 50, 200, 0.3);
+    outline-offset: 2px;
+}
+
+.dark-theme .clearButton {
+    color: #f5f5f5;
+    border-color: #c7c7c7;
+}
+
+.dark-theme .clearButton:hover {
+    background-color: rgba(245, 245, 245, 0.08);
+    border-color: #f5f5f5;
 }
 
 .form-note {
   font-size: 0.85rem;
-  color: #666;
+  color: var(--muted-text-color);
   margin-bottom: 20px;
 }
 
 #subject {
-  color: #999;
+  color: var(--muted-text-color);
 }
 
 #subject:valid {
-  color: black;
+  color: var(--text-color);
 }
 
 
