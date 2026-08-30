@@ -511,7 +511,7 @@
 
 .figma-shell {
   width: 100%;
-  height: calc(12960px * var(--figma-scale));
+  height: auto;
   padding: 0;
   overflow: hidden;
 }
@@ -522,8 +522,7 @@
   position: relative;
   background: white;
   color: black;
-  transform: scale(var(--figma-scale));
-  transform-origin: top left;
+  zoom: var(--figma-scale);
 }
 
 .figma-intro-bg {
@@ -588,6 +587,7 @@
 
 .figma-copy {
   position: absolute;
+  margin: 0;
   color: black;
   font-size: 30px;
   line-height: normal;
@@ -642,7 +642,7 @@
 
 .critical-copy {
   left: 644px;
-  top: 7749px;
+  top: 7744px;
   width: 273px;
 }
 
@@ -710,6 +710,12 @@
   width: 326px;
 }
 
+.mining-quote .mining-label {
+  color: black;
+  font-size: 30px;
+  font-weight: 300;
+}
+
 .exhaust-quote {
   left: 300px;
   top: 8893px;
@@ -765,19 +771,3 @@
 .dashboard-image { left: 597px; top: 10987px; width: 1127px; height: 634px; }
 .route-image { left: 687px; top: 12066px; width: 1037px; height: 593px; }
 .route-image img { width: 101.66%; }
-
-.honest-export-body {
-  margin: 0;
-  background: #ffffff;
-}
-
-.honest-export-page {
-  width: 100%;
-  margin: 0;
-}
-
-.honest-export-page img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
