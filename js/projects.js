@@ -20,7 +20,7 @@ const projects = [
     category: "Critical Design",
     technologies: ["Critical Design", "Illustration"],
     image: "image/polestar_ui.gif",
-    link: "https://tarekdesign.se/an-honest-interface"
+    link: "honest-interfaces.html"
   },
   /* Touch & Discover */
   {
@@ -130,7 +130,10 @@ function renderProjects(list) {
     const link = document.createElement("a");
     link.textContent = "View project";
     link.href = project.link;
-    link.target = "_blank";
+    if (project.link.startsWith("http")) {
+      link.target = "_blank";
+      link.rel = "noopener";
+    }
     link.classList.add("project-link");
 
     // put image, title and description inside the card
