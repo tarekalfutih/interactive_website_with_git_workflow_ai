@@ -9,7 +9,7 @@ const projects = [
     description: "An app that allows musicians to rent instruments instead of buying them.",
     category: "UX/UI",
     technologies: ["Figma", "UI Design"],
-    image: "image/playrent.png",
+    image: "Image/playrent.png",
     link: "https://tarekdesign.se/playrent"
   },
 /* An Honest Interfaces */
@@ -19,7 +19,7 @@ const projects = [
     description: "A critical design project that shows the hidden ethical and environmental impact of driving.",
     category: "Critical Design",
     technologies: ["Critical Design", "Illustration"],
-    image: "image/polestar_ui.gif",
+    image: "Image/polestar_ui.gif",
     link: "honest-interfaces.html"
   },
   /* Touch & Discover */
@@ -29,7 +29,7 @@ const projects = [
   description: "An interactive museum console that lets visitors explore the story of Ingemar Johansson.",
   category: "UX/UI",
   technologies: ["Interaction Design", "UI"],
-  image: "image/touch_and_discover.png",
+  image: "Image/touch_and_discover.png",
   link: "https://tarekdesign.se/touch-and-discover"
 },
 /* Skräphjältarna */
@@ -39,7 +39,7 @@ const projects = [
   description: "An educational children’s book that teaches recycling in a fun and visual way.",
   category: "Illustration",
   technologies: ["Illustration", "Book Design"],
-  image: "image/skraphjaltarna.png",
+  image: "Image/skraphjaltarna.png",
   link: "https://tarekalfutih.se/skraphjaltarna"
 },
 /* Game Background */
